@@ -42,8 +42,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.question3Button = new System.Windows.Forms.Button();
-            this.q3Int1Text = new System.Windows.Forms.TextBox();
-            this.q3int2Text = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.question3OutputLabel = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -84,6 +84,7 @@
             this.question01Button.TabIndex = 3;
             this.question01Button.Text = "Question 01";
             this.question01Button.UseVisualStyleBackColor = true;
+            this.question01Button.Click += new System.EventHandler(this.question01Button_Click);
             // 
             // question1OutputLabel
             // 
@@ -118,6 +119,7 @@
             this.question2Button.TabIndex = 7;
             this.question2Button.Text = "Question 02";
             this.question2Button.UseVisualStyleBackColor = true;
+            this.question2Button.Click += new System.EventHandler(this.question2Button_Click);
             // 
             // question2TextBox
             // 
@@ -125,6 +127,7 @@
             this.question2TextBox.Name = "question2TextBox";
             this.question2TextBox.Size = new System.Drawing.Size(286, 26);
             this.question2TextBox.TabIndex = 8;
+            this.question2TextBox.TextChanged += new System.EventHandler(this.question2TextBox_TextChanged);
             // 
             // question2OutputLabel
             // 
@@ -159,20 +162,21 @@
             this.question3Button.TabIndex = 12;
             this.question3Button.Text = "Question 03";
             this.question3Button.UseVisualStyleBackColor = true;
+            this.question3Button.Click += new System.EventHandler(this.question3Button_Click);
             // 
-            // q3Int1Text
+            // textBox1
             // 
-            this.q3Int1Text.Location = new System.Drawing.Point(479, 281);
-            this.q3Int1Text.Name = "q3Int1Text";
-            this.q3Int1Text.Size = new System.Drawing.Size(100, 26);
-            this.q3Int1Text.TabIndex = 13;
+            this.textBox1.Location = new System.Drawing.Point(479, 281);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 26);
+            this.textBox1.TabIndex = 13;
             // 
-            // q3int2Text
+            // textBox2
             // 
-            this.q3int2Text.Location = new System.Drawing.Point(638, 281);
-            this.q3int2Text.Name = "q3int2Text";
-            this.q3int2Text.Size = new System.Drawing.Size(100, 26);
-            this.q3int2Text.TabIndex = 14;
+            this.textBox2.Location = new System.Drawing.Point(638, 281);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 26);
+            this.textBox2.TabIndex = 14;
             // 
             // question3OutputLabel
             // 
@@ -218,8 +222,8 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.question3OutputLabel);
-            this.Controls.Add(this.q3int2Text);
-            this.Controls.Add(this.q3Int1Text);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.question3Button);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -237,6 +241,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Practice Quiz";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,8 +262,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button question3Button;
-        private System.Windows.Forms.TextBox q3Int1Text;
-        private System.Windows.Forms.TextBox q3int2Text;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label question3OutputLabel;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
